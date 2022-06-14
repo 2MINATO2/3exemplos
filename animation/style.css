@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(153,153,153);
+    background: linear-gradient(90deg, rgb(204, 215, 218) 0%, rgb(149, 182, 192) 42%, rgb(64, 167, 198) 82%);
+    background-size: 500% 100%;
+    animation: main-animato 5s infinite alternate ;
+}
+
+.main h1{
+    color: rgb(33, 34, 35);
+    font-weight: lighter;
+}
+
+@keyframes main-animato {
+    0%{
+        background-position-x:0%;
+    }
+    100%{
+        background-position-x:100%;
+    }
+}
